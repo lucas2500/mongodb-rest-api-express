@@ -25,10 +25,10 @@ module.exports = {
         let body = req.body.Products;
 
         for (let i in body) {
-            
+
             try {
 
-                let filter = body[i].Code;
+                let filter = { "Code": body[i].Code }
                 await products.findOneAndUpdate(filter, body[i],
                     {
                         new: true,
