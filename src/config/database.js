@@ -10,4 +10,4 @@ const mongoose = require("mongoose");
         }).catch((err) => {
             console.log("There was an error when trying to connect to MongoDB!!");
         });
-})()
+})();

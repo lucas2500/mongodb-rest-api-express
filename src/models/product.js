@@ -9,7 +9,7 @@ const ProductSchemma = new mongoose.Schema(
         Barcode: { type: String, required: true },
         Active: { type: Boolean, required: true }
     }
-)
+);
 
 const products = mongoose.model("Products", ProductSchemma);
 
