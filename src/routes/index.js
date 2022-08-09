@@ -1,4 +1,3 @@
-const bodyParser = require("body-parser");
 const express = require("express");
 const products = require("./ProductRoutes.js");
 
@@ -9,7 +8,6 @@ const routes = (app) => {
 
     app.use(
         express.json(),
-        bodyParser.json(),
         products
     );
 }

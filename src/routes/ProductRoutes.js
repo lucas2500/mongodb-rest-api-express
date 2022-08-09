@@ -6,5 +6,6 @@ const router = express.Router();
 router 
     .get("/product", ProductControler.ListProducts)
     .post("/UpsertProduct", ProductControler.UpsertProduct)
+    .delete("/DeleteProduct", ProductControler.DeleteProduct)
 
 module.exports = router;
