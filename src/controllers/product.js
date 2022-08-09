@@ -1,4 +1,3 @@
-const { findOneAndDelete } = require("../models/product.js");
 const products = require("../models/product.js");
 
 module.exports = {
